@@ -22,6 +22,11 @@
             transition: background-color 0.5s ease, color 0.5s ease, opacity 0.4s ease-in-out;  /* 平滑過渡 */
         }
 
+        /* 文字顏色 */
+        .accent-orange {
+            color: #FF5500;
+        }
+
         /* 大標題 */
         .hero-title {
             font-family: 'Syne', sans-serif;
@@ -147,44 +152,47 @@
     <section class="fixed top-0 left-0 h-screen w-full flex flex-col justify-between items-center px-0 pt-24 pb-6 z-0 bg-[#0c0c0c] overflow-hidden">
         
         <div class="w-full max-w-7xl mx-auto flex flex-col items-center px-4">
-            <p class="text-[11px] md:text-xs tracking-[0.4em] uppercase text-gray-400 font-semibold">Creative Developer & UI Designer</p>
+            <p class="text-[11px] md:text-xs tracking-[0.4em] uppercase text-gray-400 font-semibold">CS203A • DATA STRUCTURE</p>
         </div>
 
         <div class="w-full flex flex-col justify-center space-y-1 md:space-y-2 select-none my-auto">
             
+            <!-- 上小標題 -->
             <div class="w-full overflow-hidden whitespace-nowrap py-0.5">
                 <div class="marquee-track-right">
                     <div class="flex items-center space-x-12 px-6">
-                        <span class="outline-title text-[4vw] md:text-[3vw] uppercase">DIGITAL EXPERIENCE &bull; INTERACTION &bull; CODE &bull; DESIGN &bull;</span>
+                        <span class="outline-title text-[4vw] md:text-[3vw] uppercase">CS203A &bull; data structure &bull; CS203A &bull; data structure &bull;</span>
                     </div>
                     <div class="flex items-center space-x-12 px-6">
-                        <span class="outline-title text-[4vw] md:text-[3vw] uppercase">DIGITAL EXPERIENCE &bull; INTERACTION &bull; CODE &bull; DESIGN &bull;</span>
+                        <span class="outline-title text-[4vw] md:text-[3vw] uppercase">CS203A &bull; data structure &bull; CS203A &bull; data structure &bull;</span>
                     </div>
                 </div>
             </div>
 
+            <!-- 大標題 -->
             <div class="w-full overflow-hidden whitespace-nowrap py-1">
                 <div class="marquee-track-left">
                     <div class="flex items-center space-x-12 px-6">
                         <h1 class="hero-title text-[15vw] md:text-[13vw] uppercase accent-orange">
-                            CREATIVE STUDIO &bull;
+                            DATA STRUCTURE
                         </h1>
                     </div>
                     <div class="flex items-center space-x-12 px-6">
                         <h1 class="hero-title text-[15vw] md:text-[13vw] uppercase accent-orange">
-                            CREATIVE STUDIO &bull;
+                            CREATIVE &bull; LEARNING &bull;
                         </h1>
                     </div>
                 </div>
             </div>
 
+            <!-- 下小標題 -->
             <div class="w-full overflow-hidden whitespace-nowrap py-0.5">
                 <div class="marquee-track-right">
                     <div class="flex items-center space-x-12 px-6">
-                        <span class="outline-title text-[4vw] md:text-[3vw] uppercase">PORTFOLIO 2026 &bull; INNOVATION &bull; FRONTEND &bull; VISUAL &bull;</span>
+                        <span class="outline-title text-[4vw] md:text-[3vw] uppercase">CHOU, HAO-CHEN &bull; 1141724 &bull; CHOU, HAO-CHEN &bull; 1141724 &bull;</span>
                     </div>
                     <div class="flex items-center space-x-12 px-6">
-                        <span class="outline-title text-[4vw] md:text-[3vw] uppercase">PORTFOLIO 2026 &bull; INNOVATION &bull; FRONTEND &bull; VISUAL &bull;</span>
+                        <span class="outline-title text-[4vw] md:text-[3vw] uppercase">CHOU, HAO-CHEN &bull; 1141724 &bull; CHOU, HAO-CHEN &bull; 1141724 &bull;</span>
                     </div>
                 </div>
             </div>
@@ -194,6 +202,7 @@
         <div class="w-full max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 items-center text-sm text-gray-400 border-t border-white/10 pt-4 gap-4">
             <p class="text-center md:text-left mb-2 md:mb-0">Scroll down to explore</p>
             
+            <!-- 下箭頭提示 -->
             <div class="flex justify-center -translate-y-2">
                 <a href="#about" class="w-10 h-10 rounded-full border border-[#FF5500] bg-[#FF5500]/10 flex items-center justify-center text-[#FF5500] animate-bounce hover:bg-[#FF5500] hover:text-white transition-all duration-300 shadow-md shadow-[#FF5500]/20" aria-label="Scroll down">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -209,35 +218,56 @@
         </div>
     </section>
 
+    <!-- 正文 -->
     <div class="relative z-10 mt-[100vh] bg-[#0c0c0c]/90 backdrop-blur-xl border-t border-white/15 shadow-[0_-30px_50px_rgba(0,0,0,0.9)]">
         
         <section id="about" class="py-32 px-6 md:px-16 max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">01 / ABOUT ME</span>
+                    <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">01 / COURSE INFO</span>
                     <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
-                        追求極致的視覺美感與流暢的互動體驗。
+                        資料結構
                     </h2>
-                    <p class="text-gray-400 leading-relaxed mb-8">
-                        我是一名專注於前端開發與數位設計的創作者。透過簡潔的架構與強烈的視覺衝擊，將複雜的邏輯轉化為直觀、高質感的數位介面。
-                    </p>
+                    <p class="text-gray-400 leading-relaxed mb-8">本區域為 CS203A 資料結構課程 的學習紀錄空間。</p>
+                    <p class="text-gray-400 leading-relaxed mb-8">主要用來整理與保存學習過程中所產生的各項內容，包括課程筆記、作業、練習、專案等。</p>
+                    <p class="text-gray-400 leading-relaxed mb-8">以便集中管理課程相關資料，同時記錄自己的學習過程與進度，方便複習。</p>
+                    
                     <div class="grid grid-cols-2 gap-6 text-white border-t border-white/10 pt-6">
                         <div>
-                            <span class="block text-3xl font-bold accent-orange mb-1">3+</span>
-                            <span class="text-xs text-gray-400 uppercase tracking-wider">Years Experience</span>
-                        </div>
-                        <div>
-                            <span class="block text-3xl font-bold accent-orange mb-1">20+</span>
-                            <span class="text-xs text-gray-400 uppercase tracking-wider">Completed Projects</span>
+                            <span class="block text-2xl font-bold accent-orange mb-1">黃玉峰</span>
+                            <span class="text-xs text-gray-400 uppercase tracking-wider">指導老師</span>
                         </div>
                     </div>
                 </div>
+                
+
+                <!-- 資訊卡片 -->
                 <div class="relative group">
-                    <div class="w-full h-[450px] bg-[#1a1a1a]/80 rounded-2xl overflow-hidden border border-white/10 flex items-center justify-center relative">
-                        <div class="absolute w-72 h-72 rounded-full bg-[#FF5500]/20 blur-3xl"></div>
-                        <div class="z-10 text-center px-8">
-                            <span class="text-6xl font-extrabold accent-orange tracking-tighter block mb-2">DESIGN</span>
-                            <span class="text-xs tracking-[0.4em] text-gray-400 uppercase">& Development</span>
+                    <div class="w-full h-[480px] bg-[#1a1a1a]/80 rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-8 relative shadow-2xl">
+                        <div class="absolute w-72 h-72 rounded-full bg-[#FF5500]/15 blur-3xl -bottom-10 -left-10"></div>
+                        <div>
+                            <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-6 inline-block">Student Profile</span>
+                            <div class="space-y-4 text-sm">
+                                <div class="flex justify-between border-b border-white/10 pb-3">
+                                    <span class="text-gray-400">課程名稱</span>
+                                    <span class="text-white font-medium">資料結構 (Data Structure)</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/10 pb-3">
+                                    <span class="text-gray-400">課程代碼</span>
+                                    <span class="text-white font-medium">CS203A</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/10 pb-3">
+                                    <span class="text-gray-400">學號</span>
+                                    <span class="text-white font-medium">1141724</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/10 pb-3">
+                                    <span class="text-gray-400">姓名</span>
+                                    <span class="text-white font-medium">鄒昊辰</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-xs text-gray-500 uppercase tracking-widest pt-4 border-t border-white/10">
+                            Learning Track &bull; GitHub Integrated
                         </div>
                     </div>
                 </div>
@@ -246,8 +276,8 @@
 
         <section id="works" class="py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-white/10">
             <div class="flex flex-col items-start mb-16">
-                <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">02 / SELECTED WORKS</span>
-                <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-3">精選專案成果</h2>
+                <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">02 / COURSE GOAT</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-3">學習目標</h2>
                 <p class="text-gray-400 text-sm">滑鼠懸停卡片即可展開並瀏覽詳情。</p>
             </div>
 
@@ -255,36 +285,36 @@
                 
                 <div class="stack-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-8 group cursor-pointer shadow-2xl">
                     <div>
-                        <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block">01 / Web App</span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">Immersive Brand Experience</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">運用前瞻性前端技術與動態視覺，為品牌打造極具沉浸感的數位互動平台。</p>
+                        <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block"> 01 / Myself</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">提升自我</h3>
+                        <p class="text-gray-200 text-bg leading-relaxed">提升程式設計優化能力。</p>
+                        <P class="text-gray-200 text-sm leading-relaxed">提升邏輯思考和英文閱讀能力。</P>
                     </div>
                     <div class="pt-6 border-t border-white/10 flex justify-between items-center text-sm">
-                        <span class="text-gray-400">UI/UX & Frontend</span>
                         <span class="text-white font-medium group-hover:translate-x-1 transition-transform">Explore →</span>
                     </div>
                 </div>
 
                 <div class="stack-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-8 group cursor-pointer shadow-2xl">
                     <div>
-                        <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block">02 / E-Commerce</span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">Minimalist Retail Platform</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">結合極簡主義美學與高效能電商架構，提供流暢直覺的購物體驗。</p>
+                        <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block"> 02 / Learn</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">課堂學習</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed">理解課程中所介紹的概念。</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">正確的利用 AI 吸收知識。</p>
                     </div>
                     <div class="pt-6 border-t border-white/10 flex justify-between items-center text-sm">
-                        <span class="text-gray-400">Next.js & Tailwind</span>
                         <span class="text-white font-medium group-hover:translate-x-1 transition-transform">Explore →</span>
                     </div>
                 </div>
 
                 <div class="stack-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-8 group cursor-pointer shadow-2xl">
                     <div>
-                        <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block">03 / AI Dashboard</span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">Next-Gen AI Interface</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">將複雜的數據流與 AI 模型互動轉化為直觀簡潔的高端儀表板介面。</p>
+                        <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block"> 03 / Apply</span>
+                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">知識運用</h3>
+                        <p class="text-gray-200 text-sm leading-relaxed">將課堂知識應用於實際的練習與專案。</p>
+                        <p class="text-gray-200 text-sm leading-relaxed">學習使用 GitHub 整理課程相關內容。</p>
                     </div>
                     <div class="pt-6 border-t border-white/10 flex justify-between items-center text-sm">
-                        <span class="text-gray-400">Data Visualization</span>
                         <span class="text-white font-medium group-hover:translate-x-1 transition-transform">Explore →</span>
                     </div>
                 </div>
@@ -293,24 +323,28 @@
         </section>
 
         <section id="skills" class="py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-white/10">
-            <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">03 / EXPERTISE</span>
-            <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-16">核心專業技能</h2>
+            <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">02 / COURSE GOAT</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-16">學習目標</h2>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="p-8 rounded-2xl bg-[#1a1a1a]/80 border border-white/10">
                     <div class="w-10 h-10 rounded-lg bg-[#FF5500]/20 flex items-center justify-center text-[#FF5500] font-bold mb-6">01</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Frontend Dev</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">HTML5, CSS3, JavaScript (ES6+), React, Next.js, Tailwind CSS 現代前端技術架構。</p>
+                    <h3 class="text-xl font-bold text-white mb-3">提升自我</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">提升程式設計優化能力。</p>
+                    <p class="text-gray-200 text-sm leading-relaxed">提升邏輯思考和英文閱讀能力。</p>
                 </div>
+
                 <div class="p-8 rounded-2xl bg-[#1a1a1a]/80 border border-white/10">
                     <div class="w-10 h-10 rounded-lg bg-[#FF5500]/20 flex items-center justify-center text-[#FF5500] font-bold mb-6">02</div>
-                    <h3 class="text-xl font-bold text-white mb-3">UI/UX Design</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Figma, Adobe XD, Design Systems, Wireframing 與響應式介面設計規劃。</p>
+                    <h3 class="text-xl font-bold text-white mb-3">課堂學習</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">理解課程中所介紹的概念。</p>
+                    <p class="text-gray-200 text-sm leading-relaxed">正確的利用 AI 吸收知識。</p>
                 </div>
                 <div class="p-8 rounded-2xl bg-[#1a1a1a]/80 border border-white/10">
                     <div class="w-10 h-10 rounded-lg bg-[#FF5500]/20 flex items-center justify-center text-[#FF5500] font-bold mb-6">03</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Performance</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">SEO 最佳化、網頁效能調校、現代化動畫互動效果與細緻的視覺呈現。</p>
+                    <h3 class="text-xl font-bold text-white mb-3">知識運用</h3>
+                    <p class="text-gray-200 text-sm leading-relaxed">將課堂知識應用於實際的練習與專案。</p>
+                    <p class="text-gray-200 text-sm leading-relaxed">學習使用 GitHub 整理課程相關內容。</p>
                 </div>
             </div>
         </section>
