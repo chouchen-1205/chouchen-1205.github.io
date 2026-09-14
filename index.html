@@ -3,11 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Portfolio - 個人作品集</title>
-    <!-- Tailwind CSS -->
+    <title>Portfolio - 鄒昊辰的資料結構學習紀錄</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <style>
@@ -67,7 +64,7 @@
         /* 跑馬燈容器 */
         .marquee-track-left {
             display: flex;
-            width: max-content;                         /* 寬度自適應 */
+            width: max-content;                     /* 寬度自適應 */
             animation: scrollLeft 30s linear infinite;  /* 無限循環 */
         }
         .marquee-track-right {
@@ -136,28 +133,25 @@
 </head>
 <body class="selection:bg-[#FF5500] selection:text-white">
 
-    <header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 py-6 backdrop-blur-md bg-[#0c0c0c]/80 border-b border-white/15">
-        <a href="#" class="text-lg font-bold tracking-widest text-white uppercase">PORTFOLIO<span class="accent-orange">.</span></a>
-        <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-400">
-            <a href="#about" class="hover:text-[#FF5500] transition-colors">關於我</a>
-            <a href="#works" class="hover:text-[#FF5500] transition-colors">精選作品</a>
-            <a href="#skills" class="hover:text-[#FF5500] transition-colors">專業技能</a>
-            <a href="#contact" class="hover:text-[#FF5500] transition-colors">聯絡方式</a>
+    <header class="fixed top-0 left-0 w-full z-50 grid grid-cols-3 items-center px-8 py-6 backdrop-blur-md bg-[#0c0c0c]/80 border-b border-white/15">
+        <div>
+            <a href="#" class="text-lg font-bold tracking-widest text-white uppercase">PORTFOLIO<span class="accent-orange">.</span></a>
+        </div>
+        <nav class="hidden md:flex justify-center space-x-8 text-sm font-medium text-gray-400">
+            <a href="#infos" class="hover:text-[#FF5500] transition-colors">課程資訊</a>
+            <a href="#goals" class="hover:text-[#FF5500] transition-colors">學習目標</a>
+            <a href="#notes" class="hover:text-[#FF5500] transition-colors">課程作業 & 筆記</a>
         </nav>
-        <a href="#contact" class="px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-white text-black hover:bg-[#FF5500] hover:text-white transition-all duration-300">
-            Let's Talk
-        </a>
-    </header>
+        <div></div> </header>
 
-    <section class="fixed top-0 left-0 h-screen w-full flex flex-col justify-between items-center px-0 pt-24 pb-6 z-0 bg-[#0c0c0c] overflow-hidden">
+    <section id="top" class="fixed top-0 left-0 h-screen w-full flex flex-col justify-between items-center px-0 pt-24 pb-6 z-0 bg-[#0c0c0c] overflow-hidden">
         
         <div class="w-full max-w-7xl mx-auto flex flex-col items-center px-4">
-            <p class="text-[11px] md:text-xs tracking-[0.4em] uppercase text-gray-400 font-semibold">CS203A • DATA STRUCTURE</p>
+            <p class="text-[11px] md:text-xs tracking-[0.4em] uppercase text-gray-400 font-semibold">CS203A &bull; DATA STRUCTURE</p>
         </div>
 
         <div class="w-full flex flex-col justify-center space-y-1 md:space-y-2 select-none my-auto">
             
-            <!-- 上小標題 -->
             <div class="w-full overflow-hidden whitespace-nowrap py-0.5">
                 <div class="marquee-track-right">
                     <div class="flex items-center space-x-12 px-6">
@@ -169,23 +163,21 @@
                 </div>
             </div>
 
-            <!-- 大標題 -->
             <div class="w-full overflow-hidden whitespace-nowrap py-1">
                 <div class="marquee-track-left">
                     <div class="flex items-center space-x-12 px-6">
                         <h1 class="hero-title text-[15vw] md:text-[13vw] uppercase accent-orange">
-                            DATA STRUCTURE
+                            DATA STRUCTURE &bull;
                         </h1>
                     </div>
                     <div class="flex items-center space-x-12 px-6">
                         <h1 class="hero-title text-[15vw] md:text-[13vw] uppercase accent-orange">
-                            CREATIVE &bull; LEARNING &bull;
+                            DATA STRUCTURE &bull;
                         </h1>
                     </div>
                 </div>
             </div>
 
-            <!-- 下小標題 -->
             <div class="w-full overflow-hidden whitespace-nowrap py-0.5">
                 <div class="marquee-track-right">
                     <div class="flex items-center space-x-12 px-6">
@@ -202,7 +194,6 @@
         <div class="w-full max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 items-center text-sm text-gray-400 border-t border-white/10 pt-4 gap-4">
             <p class="text-center md:text-left mb-2 md:mb-0">Scroll down to explore</p>
             
-            <!-- 下箭頭提示 -->
             <div class="flex justify-center -translate-y-2">
                 <a href="#about" class="w-10 h-10 rounded-full border border-[#FF5500] bg-[#FF5500]/10 flex items-center justify-center text-[#FF5500] animate-bounce hover:bg-[#FF5500] hover:text-white transition-all duration-300 shadow-md shadow-[#FF5500]/20" aria-label="Scroll down">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -218,19 +209,18 @@
         </div>
     </section>
 
-    <!-- 正文 -->
     <div class="relative z-10 mt-[100vh] bg-[#0c0c0c]/90 backdrop-blur-xl border-t border-white/15 shadow-[0_-30px_50px_rgba(0,0,0,0.9)]">
         
-        <section id="about" class="py-32 px-6 md:px-16 max-w-7xl mx-auto">
+        <section id="infos" class="py-32 px-6 md:px-16 max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                 <div>
                     <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">01 / COURSE INFO</span>
                     <h2 class="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6 leading-tight">
                         資料結構
                     </h2>
-                    <p class="text-gray-400 leading-relaxed mb-8">本區域為 CS203A 資料結構課程 的學習紀錄空間。</p>
-                    <p class="text-gray-400 leading-relaxed mb-8">主要用來整理與保存學習過程中所產生的各項內容，包括課程筆記、作業、練習、專案等。</p>
-                    <p class="text-gray-400 leading-relaxed mb-8">以便集中管理課程相關資料，同時記錄自己的學習過程與進度，方便複習。</p>
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-4">本區域為 CS203A 資料結構課程 的學習紀錄空間。</p>
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-4">主要用來整理與保存學習過程中所產生的各項內容，包括課程筆記、作業、練習、專案等。</p>
+                    <p class="text-gray-300 text-base md:text-lg leading-relaxed mb-8">以便集中管理課程相關資料，同時記錄自己的學習過程與進度，方便複習。</p>
                     
                     <div class="grid grid-cols-2 gap-6 text-white border-t border-white/10 pt-6">
                         <div>
@@ -240,43 +230,45 @@
                     </div>
                 </div>
                 
-
-                <!-- 資訊卡片 -->
                 <div class="relative group">
-                    <div class="w-full h-[480px] bg-[#1a1a1a]/80 rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-8 relative shadow-2xl">
-                        <div class="absolute w-72 h-72 rounded-full bg-[#FF5500]/15 blur-3xl -bottom-10 -left-10"></div>
-                        <div>
-                            <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-6 inline-block">Student Profile</span>
-                            <div class="space-y-4 text-sm">
-                                <div class="flex justify-between border-b border-white/10 pb-3">
-                                    <span class="text-gray-400">課程名稱</span>
-                                    <span class="text-white font-medium">資料結構 (Data Structure)</span>
+                    <div class="w-full min-h-[500px] bg-[#1a1a1a]/90 rounded-3xl overflow-hidden border border-white/15 flex flex-col justify-between p-10 relative shadow-2xl backdrop-blur-md">
+                        <div class="absolute w-80 h-80 rounded-full bg-[#FF5500]/20 blur-3xl -bottom-12 -left-12"></div>
+                        
+                        <div class="relative z-10">
+                            <span class="text-xs tracking-widest px-4 py-1.5 rounded-full bg-[#FF5500] text-white font-semibold uppercase mb-8 inline-block shadow-md">Student Profile</span>
+                            
+                            <div class="space-y-6">
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-white/10 pb-4 gap-1">
+                                    <span class="text-gray-400 text-sm tracking-wider uppercase font-medium">課程名稱</span>
+                                    <span class="text-white text-xl font-bold tracking-tight">資料結構</span>
                                 </div>
-                                <div class="flex justify-between border-b border-white/10 pb-3">
-                                    <span class="text-gray-400">課程代碼</span>
-                                    <span class="text-white font-medium">CS203A</span>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-white/10 pb-4 gap-1">
+                                    <span class="text-gray-400 text-sm tracking-wider uppercase font-medium">課程代碼</span>
+                                    <span class="text-white text-xl font-bold tracking-tight">CS203A</span>
                                 </div>
-                                <div class="flex justify-between border-b border-white/10 pb-3">
-                                    <span class="text-gray-400">學號</span>
-                                    <span class="text-white font-medium">1141724</span>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-white/10 pb-4 gap-1">
+                                    <span class="text-gray-400 text-sm tracking-wider uppercase font-medium">學號</span>
+                                    <span class="text-white text-xl font-bold tracking-tight">1141724</span>
                                 </div>
-                                <div class="flex justify-between border-b border-white/10 pb-3">
-                                    <span class="text-gray-400">姓名</span>
-                                    <span class="text-white font-medium">鄒昊辰</span>
+                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-white/10 pb-4 gap-1">
+                                    <span class="text-gray-400 text-sm tracking-wider uppercase font-medium">姓名</span>
+                                    <span class="text-white text-xl font-bold tracking-tight">鄒昊辰</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="text-xs text-gray-500 uppercase tracking-widest pt-4 border-t border-white/10">
-                            Learning Track &bull; GitHub Integrated
+
+                        <div class="text-xs text-gray-400 uppercase tracking-widest pt-6 border-t border-white/10 relative z-10 flex justify-between items-center font-medium">
+                            <span>Learning Track</span>
+                            <span class="accent-orange font-bold">GitHub Integrated</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="works" class="py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-white/10">
+        <section id="goals" class="py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-white/10">
             <div class="flex flex-col items-start mb-16">
-                <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">02 / COURSE GOAT</span>
+                <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">02 / COURSE GOALS</span>
                 <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-3">學習目標</h2>
                 <p class="text-gray-400 text-sm">滑鼠懸停卡片即可展開並瀏覽詳情。</p>
             </div>
@@ -286,88 +278,71 @@
                 <div class="stack-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-8 group cursor-pointer shadow-2xl">
                     <div>
                         <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block"> 01 / Myself</span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">提升自我</h3>
-                        <p class="text-gray-200 text-bg leading-relaxed">提升程式設計優化能力。</p>
-                        <P class="text-gray-200 text-sm leading-relaxed">提升邏輯思考和英文閱讀能力。</P>
-                    </div>
-                    <div class="pt-6 border-t border-white/10 flex justify-between items-center text-sm">
-                        <span class="text-white font-medium group-hover:translate-x-1 transition-transform">Explore →</span>
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6 group-hover:text-[#FF5500] transition-colors">提升自我</h3>
+                        <p class="text-gray-200 text-base md:text-lg leading-relaxed mb-3">• 提升程式設計優化能力。</p>
+                        <p class="text-gray-200 text-base md:text-lg leading-relaxed">• 提升邏輯思考和英文閱讀能力。</p>
                     </div>
                 </div>
 
                 <div class="stack-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-8 group cursor-pointer shadow-2xl">
                     <div>
                         <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block"> 02 / Learn</span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">課堂學習</h3>
-                        <p class="text-gray-200 text-sm leading-relaxed">理解課程中所介紹的概念。</p>
-                        <p class="text-gray-200 text-sm leading-relaxed">正確的利用 AI 吸收知識。</p>
-                    </div>
-                    <div class="pt-6 border-t border-white/10 flex justify-between items-center text-sm">
-                        <span class="text-white font-medium group-hover:translate-x-1 transition-transform">Explore →</span>
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6 group-hover:text-[#FF5500] transition-colors">課堂學習</h3>
+                        <p class="text-gray-200 text-base md:text-lg leading-relaxed mb-3">• 理解課程中所介紹的概念。</p>
+                        <p class="text-gray-200 text-base md:text-lg leading-relaxed">• 正確的利用 AI 吸收知識。</p>
                     </div>
                 </div>
 
                 <div class="stack-card bg-[#1a1a1a] rounded-2xl overflow-hidden border border-white/10 flex flex-col justify-between p-8 group cursor-pointer shadow-2xl">
                     <div>
                         <span class="text-xs px-3 py-1 rounded-full bg-[#FF5500] text-white font-medium mb-4 inline-block"> 03 / Apply</span>
-                        <h3 class="text-2xl md:text-3xl font-bold text-white mb-4 group-hover:text-[#FF5500] transition-colors">知識運用</h3>
-                        <p class="text-gray-200 text-sm leading-relaxed">將課堂知識應用於實際的練習與專案。</p>
-                        <p class="text-gray-200 text-sm leading-relaxed">學習使用 GitHub 整理課程相關內容。</p>
-                    </div>
-                    <div class="pt-6 border-t border-white/10 flex justify-between items-center text-sm">
-                        <span class="text-white font-medium group-hover:translate-x-1 transition-transform">Explore →</span>
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-6 group-hover:text-[#FF5500] transition-colors">知識運用</h3>
+                        <p class="text-gray-200 text-base md:text-lg leading-relaxed mb-3">• 將課堂知識應用於實際的練習與專案。</p>
+                        <p class="text-gray-200 text-base md:text-lg leading-relaxed">• 學習使用 GitHub 整理課程相關內容。</p>
                     </div>
                 </div>
 
             </div>
         </section>
 
-        <section id="skills" class="py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-white/10">
-            <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">02 / COURSE GOAT</span>
-            <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-16">學習目標</h2>
+        <section id="notes" class="py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-white/10">
+            <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">03 / HOMEWORK & NOTES</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-16">課程作業 & 筆記</h2>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-8 rounded-2xl bg-[#1a1a1a]/80 border border-white/10">
-                    <div class="w-10 h-10 rounded-lg bg-[#FF5500]/20 flex items-center justify-center text-[#FF5500] font-bold mb-6">01</div>
-                    <h3 class="text-xl font-bold text-white mb-3">提升自我</h3>
-                    <p class="text-gray-200 text-sm leading-relaxed">提升程式設計優化能力。</p>
-                    <p class="text-gray-200 text-sm leading-relaxed">提升邏輯思考和英文閱讀能力。</p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-10">
+                
+                <div class="w-full md:w-[460px] min-h-[320px] p-10 rounded-3xl bg-[#1a1a1a]/90 border border-white/15 flex flex-col justify-between shadow-2xl transition-all duration-300 hover:border-[#FF5500]/50">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-[#FF5500]/20 flex items-center justify-center text-[#FF5500] font-bold text-lg mb-6">01</div>
+                        <h3 class="text-3xl font-bold text-white mb-4">作業連結</h3>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">待更新</p>
+                    </div>
+                    <div class="pt-6 border-t border-white/10 flex justify-end items-center">
+                        <a href="#" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#FF5500] text-white font-semibold text-sm hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-[#FF5500]/20">
+                            Explore →
+                        </a>
+                    </div>
                 </div>
 
-                <div class="p-8 rounded-2xl bg-[#1a1a1a]/80 border border-white/10">
-                    <div class="w-10 h-10 rounded-lg bg-[#FF5500]/20 flex items-center justify-center text-[#FF5500] font-bold mb-6">02</div>
-                    <h3 class="text-xl font-bold text-white mb-3">課堂學習</h3>
-                    <p class="text-gray-200 text-sm leading-relaxed">理解課程中所介紹的概念。</p>
-                    <p class="text-gray-200 text-sm leading-relaxed">正確的利用 AI 吸收知識。</p>
+                <div class="w-full md:w-[460px] min-h-[320px] p-10 rounded-3xl bg-[#1a1a1a]/90 border border-white/15 flex flex-col justify-between shadow-2xl transition-all duration-300 hover:border-[#FF5500]/50">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-[#FF5500]/20 flex items-center justify-center text-[#FF5500] font-bold text-lg mb-6">02</div>
+                        <h3 class="text-3xl font-bold text-white mb-4">筆記連結</h3>
+                        <p class="text-gray-300 text-lg leading-relaxed mb-6">待更新</p>
+                    </div>
+                    <div class="pt-6 border-t border-white/10 flex justify-end items-center">
+                        <a href="#" class="inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-[#FF5500] text-white font-semibold text-sm hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-[#FF5500]/20">
+                            Explore →
+                        </a>
+                    </div>
                 </div>
-                <div class="p-8 rounded-2xl bg-[#1a1a1a]/80 border border-white/10">
-                    <div class="w-10 h-10 rounded-lg bg-[#FF5500]/20 flex items-center justify-center text-[#FF5500] font-bold mb-6">03</div>
-                    <h3 class="text-xl font-bold text-white mb-3">知識運用</h3>
-                    <p class="text-gray-200 text-sm leading-relaxed">將課堂知識應用於實際的練習與專案。</p>
-                    <p class="text-gray-200 text-sm leading-relaxed">學習使用 GitHub 整理課程相關內容。</p>
-                </div>
-            </div>
-        </section>
 
-        <section id="contact" class="py-32 px-6 md:px-16 max-w-7xl mx-auto border-t border-white/10 text-center">
-            <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">04 / GET IN TOUCH</span>
-            <h2 class="text-4xl md:text-7xl font-bold text-white tracking-tight mb-8">準備好開始合作了嗎？</h2>
-            <p class="text-gray-400 max-w-xl mx-auto mb-12 text-lg">
-                無論是專案委託、工作機會或技術交流，隨時歡迎與我聯繫。
-            </p>
-            <a href="mailto:hello@example.com" class="inline-block px-10 py-5 rounded-full bg-[#FF5500] text-white font-bold text-lg tracking-wider hover:bg-white hover:text-black transition-all duration-300 shadow-lg shadow-[#FF5500]/30">
-                hello@example.com
-            </a>
+                </div>
         </section>
 
         <footer class="py-8 px-8 border-t border-white/10 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
             <p>© 2026 Personal Portfolio. All rights reserved.</p>
-            <div class="flex space-x-6 mt-4 md:mt-0">
-                <a href="#" class="hover:text-white transition-colors">GitHub</a>
-                <a href="#" class="hover:text-white transition-colors">LinkedIn</a>
-                <a href="#" class="hover:text-white transition-colors">Twitter</a>
-            </div>
-        </footer>
+            </footer>
 
     </div>
 
