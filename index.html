@@ -64,7 +64,7 @@
         /* 跑馬燈容器 */
         .marquee-track-left {
             display: flex;
-            width: max-content;                     /* 寬度自適應 */
+            width: max-content;                         /* 寬度自適應 */
             animation: scrollLeft 30s linear infinite;  /* 無限循環 */
         }
         .marquee-track-right {
@@ -121,12 +121,6 @@
             .stack-card:nth-child(3) {
                 transform: rotate(-2deg) translateY(10px);
                 z-index: 3;
-            }
-            /* 當滑鼠懸停時，將卡片展開並提升層級 */
-            .stack-card:hover {
-                width: 520px;
-                z-index: 30;
-                transform: rotate(0deg) translateY(-20px) scale(1.02);
             }
         }
     </style>
@@ -196,7 +190,7 @@
             <p class="text-center md:text-left mb-2 md:mb-0">Scroll down to explore</p>
             
             <div class="flex justify-center -translate-y-2">
-                <a href="#about" class="w-10 h-10 rounded-full border border-[#FF5500] bg-[#FF5500]/10 flex items-center justify-center text-[#FF5500] animate-bounce hover:bg-[#FF5500] hover:text-white transition-all duration-300 shadow-md shadow-[#FF5500]/20" aria-label="Scroll down">
+                <a href="#infos" class="w-10 h-10 rounded-full border border-[#FF5500] bg-[#FF5500]/10 flex items-center justify-center text-[#FF5500] animate-bounce hover:bg-[#FF5500] hover:text-white transition-all duration-300 shadow-md shadow-[#FF5500]/20" aria-label="Scroll down">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                     </svg>
@@ -257,11 +251,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <div class="text-xs text-gray-400 uppercase tracking-widest pt-6 border-t border-white/10 relative z-10 flex justify-between items-center font-medium">
-                            <span>Learning Track</span>
-                            <span class="accent-orange font-bold">GitHub Integrated</span>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -271,7 +260,6 @@
             <div class="flex flex-col items-start mb-16">
                 <span class="text-xs font-bold tracking-widest uppercase accent-orange mb-4 block">02 / COURSE GOALS</span>
                 <h2 class="text-3xl md:text-5xl font-bold text-white tracking-tight mb-3">學習目標</h2>
-                <p class="text-gray-400 text-sm">滑鼠懸停卡片即可展開並瀏覽詳情。</p>
             </div>
 
             <div class="card-stack-container py-12">
@@ -340,10 +328,6 @@
 
             </div>
         </section>
-
-        <footer class="py-8 px-8 border-t border-white/10 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
-            <p>© 2026 Personal Portfolio. All rights reserved.</p>
-        </footer>
 
     </div>
 
