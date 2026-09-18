@@ -142,7 +142,8 @@
             <a href="#goals" class="hover:text-[#FF5500] transition-colors">學習目標</a>
             <a href="#notes" class="hover:text-[#FF5500] transition-colors">課程作業 & 筆記</a>
         </nav>
-        <div></div> </header>
+        <div></div>
+    </header>
 
     <section id="top" class="fixed top-0 left-0 h-screen w-full flex flex-col justify-between items-center px-0 pt-24 pb-6 z-0 bg-[#0c0c0c] overflow-hidden">
         
@@ -337,14 +338,28 @@
                     </div>
                 </div>
 
-                </div>
+            </div>
         </section>
 
         <footer class="py-8 px-8 border-t border-white/10 text-center text-xs text-gray-500 flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto">
             <p>© 2026 Personal Portfolio. All rights reserved.</p>
-            </footer>
+        </footer>
 
     </div>
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            const tracks = document.querySelectorAll('.marquee-track-left, .marquee-track-right');
+            tracks.forEach(track => {
+                if (scrollY > 50) {
+                    track.style.animationPlayState = 'paused';
+                } else {
+                    track.style.animationPlayState = 'running';
+                }
+            });
+        });
+    </script>
 
 </body>
 </html>
